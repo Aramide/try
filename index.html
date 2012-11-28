@@ -15,17 +15,8 @@
             $.mobile.buttonMarkup.hoverDelay = 0
         });
     </script>
-    <script type="application/javascript">
-	window.addEventListener('load', function() {
-		new FastClick(document.getElementById('fastclick'));
-		Array.prototype.forEach.call(document.getElementsByClassName('test'), function(testEl) {
-			testEl.addEventListener('click', function() {
-				testEl.style.backgroundColor = testEl.style.backgroundColor ? '' : 'YellowGreen';
-			}, false)
-		});
-	}, false);
-</script>
-<script type="application/javascript" src="js/fastclick.js"></script>
+    
+<script type="javascript" src="js/fastclick.js"></script>
    <script src="js/jquery.mobile-1.2.0.min.js"></script>        
         
 </head>
@@ -38,8 +29,8 @@
             </div>
                 <div class="mvv-navbar mvv-edge-to-edge" data-role="navbar">
                     <ul>
-                        <li><a class="test" data-theme="c" href="checklists.html" id="fastclick">CHECKLISTS</a></li>
-                        <li><a class="test" data-theme="c" href="notes.html" id="fastclick">MY WEDDING</a></li>
+                        <li><a class="fastclick" data-theme="c" href="checklists.html">CHECKLISTS</a></li>
+                        <li><a class="fastclick" data-theme="c" href="notes.html">MY WEDDING</a></li>
                         <li><a class="ui-btn-active" data-theme="c" href="index.html">ABOUT</a></li>
                     </ul>
                 </div>
