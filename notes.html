@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+    <!--[if IE 7]><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><![endif]-->
+    <title>App4brides</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&amp;v1' rel='stylesheet' type='text/css'/>
+    <link href="css/Site.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/mnotes.js"></script>
+    <script type="text/javascript">
+        $(document).bind("mobileinit", function () {
+            $.mobile.ajaxEnabled = false;
+        });
+    </script>
+   <script src="js/jquery.mobile-1.2.0.min.js"></script>        
+</head>
+<body>
+    <div data-role="page" data-theme="c">
+        <div data-role="header">
+            <div id="header">
+                
+                    
+            </div>
+                <div class="mvv-navbar mvv-edge-to-edge" data-role="navbar">
+                    <ul>
+                        <li><a class="" data-theme="c" href="checklists.html">CHECKLISTS</a></li>
+                        <li><a class="ui-btn-active" data-theme="c" href="notes.html">MY WEDDING</a></li>
+                        <li><a class="" data-theme="c" href="index.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            <!-- end header -->
+        </div>
+
+        <div data-role="content">
+            <div id="find-veev">
+            
+             <h3>
+         <span class="mvv-light-green">My Wedding Plans</span></h3>
+   <p>You can write your notes below, edit and clear them  you do not need to save. Everything written remains here on your device</p>
+<div id="scribble-pad"><pre id="scribble" contenteditable="true" onkeyup="storeUserScribble(this.id);"></pre></div>
+
+
+<script>
+  getUserScribble();
+</script>
+
+
+
+                <ul data-role="listview">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/Recipes">RECIPES</a></li>
+                    <li><a href="/Locations/Search">FIND VEEV</a></li>
+                    <li><a href="/About">ABOUT</a></li>
+                    <li><a href="/Contact">CONTACT</a></li>
+                </ul>
+        </div>
+        <div data-role="footer">
+            <div id="footer">
+                
+        </div>
+        <!-- /End Footer -->
+    </div>
+    <!-- /End Page -->
+    
+</body>
+</html>
