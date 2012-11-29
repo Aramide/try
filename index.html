@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,14 +6,17 @@
     <!--[if IE 7]><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><![endif]-->
     <title>App4brides</title>
     <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+    <style>.ui-page { -webkit-backface-visibility: hidden; }</style>
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&amp;v1' rel='stylesheet' type='text/css'/>
     <link href="css/Site.min.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript">
         $(document).bind("mobileinit", function () {
-            $.mobile.ajaxEnabled = false;
-        });
-    </script>     
+            $.mobile.loadPage( checklists.html, { showLoadMsg: false } );        });
+            $.mobile.loadPage( notes.html, { showLoadMsg: false } );        });
+
+    </script>
+
    <script src="js/jquery.mobile-1.2.0.min.js"></script>        
         
 </head>
@@ -26,8 +29,8 @@
             </div>
                 <div class="mvv-navbar mvv-edge-to-edge" data-role="navbar">
                     <ul>
-                        <li><a  data-theme="c" href="checklists.html">CHECKLISTS</a></li>
-                        <li><a  data-theme="c" href="notes.html">MY WEDDING</a></li>
+                        <li><a class="" data-theme="c" href="checklists.html" transition="none">CHECKLISTS</a></li>
+                        <li><a class="" data-theme="c" href="notes.html">MY WEDDING</a></li>
                         <li><a class="ui-btn-active" data-theme="c" href="index.html">ABOUT</a></li>
                     </ul>
                 </div>
